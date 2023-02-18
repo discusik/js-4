@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пример 30</title>
+</head>
+<body>
+    <script>
+        let i=prompt('Введите характеристику гриба(Коричневый,Белый,Красный,Жёлтый).').toLowerCase().trim();
+        let x=prompt('Есть ли у него шляпка?(Есть/Нет).').toLowerCase().trim();
+
+        switch(true) {
+		case i == 'белый' && x == 'нет': {
+			alert('Вы нашли белый гриб!');
+			break;		
+		}
+		
+		case i == 'красный' && x =='есть': {
+			alert('А не мухомор ли это?');
+			break;	
+		}
+		
+		case i == 'красный' && x =='нет': {
+			alert('Может это подосиновик?');
+			break;	
+		}
+        default : 
+        alert('С грибами надо быть поосторожнее!:(');
+	}
+            
+    </script>
+</body>
+</html>
